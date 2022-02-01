@@ -1,4 +1,5 @@
 {
   "jwtPrivateKey": "socialie_jwtPrivateKey",
-  "db": "socialie_db"
+  "db": "socialie_db",
+  "pass": "socialie_pass"
 }
