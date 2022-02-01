@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "socialie_jwtPrivateKey",
+  "db": "socialie_db"
+}
