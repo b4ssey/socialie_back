@@ -1,5 +1,10 @@
 {
   "jwtPrivateKey": "socialie_jwtPrivateKey",
   "db": "socialie_db",
-  "pass": "socialie_pass"
+  "pass": "socialie_pass",
+  "arn": "aws_arn",
+  "bucket_name": "aws_bucket_name",
+  "bucket_region": "aws_bucket_region",
+  "access_key": "aws_access_key",
+  "secret_key": "aws_secret_key"
 }

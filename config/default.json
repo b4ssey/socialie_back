@@ -2,10 +2,10 @@
   "jwtPrivateKey": "",
   "db": "mongodb://localhost/socialie_db",
   "pass": "",
-  "user": "taskiapphandler@gmail.com",
-  "AWS_ARN": "arn:aws:s3:::socialie-files",
-  "AWS_BUCKET_NAME": "socialie-files",
-  "AWS_BUCKET_REGION": "eu-west-2",
-  "AWS_ACCESS_KEY": "AKIA6HFUWI7ZVG55XFOP",
-  "AWS_SECRET_KEY": "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"
+  "user": "socialieapphandler@gmail.com",
+  "arn": "",
+  "bucket_name": "",
+  "bucket_region": "",
+  "access_key": "",
+  "secret_key": ""
 }
