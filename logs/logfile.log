@@ -3,3 +3,87 @@
 {"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
 {"level":"info","message":"Listening on port 3000"}
 {"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"code":"SignatureDoesNotMatch","extendedRequestId":"i32iM9vb5D5+dlQKH53Suf14AI0mV2bKf/q3DENvB/q10Xn/+BYIbWdEuWkqyeH5lPY3mYneZ3w=","level":"error","message":"The request signature we calculated does not match the signature you provided. Check your key and signing method. The request signature we calculated does not match the signature you provided. Check your key and signing method.","region":null,"requestId":"SBMT7QEHD1TP3FY1","retryDelay":26.171661322359974,"retryable":false,"stack":"SignatureDoesNotMatch: The request signature we calculated does not match the signature you provided. Check your key and signing method.\n    at Request.extractError (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\services\\s3.js:711:35)\n    at Request.callListeners (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\sequential_executor.js:106:20)\n    at Request.emit (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\sequential_executor.js:78:10)\n    at Request.emit (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\request.js:686:14)\n    at Request.transition (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\request.js:22:10)\n    at AcceptorStateMachine.runTo (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\state_machine.js:14:12)\n    at C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\state_machine.js:26:10\n    at Request.<anonymous> (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\request.js:38:9)\n    at Request.<anonymous> (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\request.js:688:12)\n    at Request.callListeners (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\sequential_executor.js:116:18)","statusCode":403,"time":"2022-03-21T14:36:57.535Z"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
