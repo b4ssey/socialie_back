@@ -1,5 +1,6 @@
 {
   "jwtPrivateKey": "",
-  "db": "",
-  "pass": ""
+  "db": "mongodb://localhost/socialie_db",
+  "pass": "",
+  "user": "taskiapphandler@gmail.com"
 }
