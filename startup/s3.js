@@ -3,16 +3,16 @@ const fs = require("fs");
 const config = require("config");
 
 const s3 = new S3({
-  region: config.get("AWS_BUCKET_REGION"),
-  accessKeyId: config.get("AWS_ACCESS_KEY"),
-  secretAccessKey: config.get("AWS_SECRET_KEY"),
+  region: config.get("bucket_region"),
+  accessKeyId: config.get("access_key"),
+  secretAccessKey: config.get("secret_key"),
 });
 
 // UPLOAD FILE TO S3
 function uploadFile(file) {
   const fileStream = fs.createReadStream(file.path);
   const uploadParams = {
-    Bucket: config.get("AWS_BUCKET_NAME"),
+    Bucket: config.get("bucket_name"),
     Body: fileStream,
     Key: file.filename,
   };
@@ -23,7 +23,7 @@ function uploadFile(file) {
 function getFileStream(fileKey) {
   const downloadParams = {
     Key: fileKey,
-    Bucket: config.get("AWS_BUCKET_NAME"),
+    Bucket: config.get("bucket_name"),
   };
   return s3.getObject(downloadParams).createReadStream();
 }
