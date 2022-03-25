@@ -7,6 +7,7 @@ const reactions = require("../routes/reactions");
 const replies = require("../routes/replies");
 const users = require("../routes/users");
 const error = require("../middleware/error");
+const auth = require("../routes/auth");
 
 module.exports = function (app) {
   app.use(express.json());
@@ -17,5 +18,6 @@ module.exports = function (app) {
   app.use("/api/reactions", reactions);
   app.use("/api/replies", replies);
   app.use("/api/users", users);
+  app.use("/api/auth", auth);
   app.use(error);
 };

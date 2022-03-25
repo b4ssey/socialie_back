@@ -52,6 +52,7 @@ router.get("/confirm/:confirmationCode", async (req, res) => {
   if (!user) return res.status(404).send("User Not found.");
 
   user.status = "Active";
+  user.confirmationCode = "";
 
   await user.save();
 

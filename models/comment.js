@@ -1,16 +1,14 @@
 const mongoose = require("mongoose");
 const Joi = require("joi");
 
-const Post = mongoose.model(
-  "Post",
+const Comment = mongoose.model(
+  "Comment",
   new mongoose.Schema({
     caption: {
       type: String,
       required: true,
-      minlength: 1,
-      maxlength: 300,
     },
-    imageId: {
+    postId: {
       type: String,
       required: true,
     },
@@ -23,10 +21,6 @@ const Post = mongoose.model(
       required: true,
       default: Date.now,
     },
-    replyCount: {
-      type: Number,
-      min: 0,
-    },
     likeCount: {
       type: Number,
       min: 0,
@@ -34,18 +28,18 @@ const Post = mongoose.model(
   })
 );
 
-function validatePost(cptn, mgd, wnrd) {
+function validateComment(cptn, pstd, wnrd) {
   const schema = Joi.object({
     caption: Joi.string().min(1).max(300).required(),
-    imageId: Joi.required(),
+    postId: Joi.objectId().required(),
     ownerId: Joi.objectId().required(),
   });
   return schema.validate({
     caption: cptn,
-    imageId: mgd,
+    postId: pstd,
     ownerId: wnrd,
   });
 }
 
-exports.Post = Post;
-exports.validate = validatePost;
+exports.Comment = Comment;
+exports.validate = validateComment;
