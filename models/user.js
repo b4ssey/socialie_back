@@ -28,13 +28,15 @@ const userSchema = new mongoose.Schema({
     enum: ["Pending", "Active"],
     default: "Pending",
   },
-  postCount: { type: Number, min: 0 },
-  FollowerCount: { type: Number, min: 0 },
-  FollowingCount: { type: Number, min: 0 },
+  postCount: { post: [], count: { type: Number, min: 0 } },
+  followerCount: { follower: { type: Array }, count: { type: Number, min: 0 } },
+  followingCount: { following: [], count: { type: Number, min: 0 } },
   confirmationCode: {
     type: String,
     unique: true,
   },
+  bio: { type: String, minlength: 5, maxlength: 1024 },
+  site: { type: String, minlength: 5, maxlength: 64 },
   isAdmin: Boolean,
 });
 

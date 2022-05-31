@@ -146,3 +146,44 @@
 {"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
 {"level":"info","message":"Listening on port 3000"}
 {"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"code":"UriParameterError","level":"error","message":"Expected uri parameter to have length >= 1, but found \"\" for params.Bucket Expected uri parameter to have length >= 1, but found \"\" for params.Bucket","stack":"UriParameterError: Expected uri parameter to have length >= 1, but found \"\" for params.Bucket\n    at ParamValidator.fail (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:50:37)\n    at ParamValidator.validateUri (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:166:14)\n    at ParamValidator.validateString (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:159:12)\n    at ParamValidator.validateScalar (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:131:21)\n    at ParamValidator.validateMember (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:95:21)\n    at ParamValidator.validateStructure (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:76:14)\n    at ParamValidator.validateMember (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:89:21)\n    at ParamValidator.validate (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:34:10)\n    at Request.VALIDATE_PARAMETERS (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\event_listeners.js:132:42)\n    at Request.callListeners (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\sequential_executor.js:106:20)","time":"2022-05-31T20:50:35.374Z"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"code":"UriParameterError","level":"error","message":"Expected uri parameter to have length >= 1, but found \"\" for params.Bucket Expected uri parameter to have length >= 1, but found \"\" for params.Bucket","stack":"UriParameterError: Expected uri parameter to have length >= 1, but found \"\" for params.Bucket\n    at ParamValidator.fail (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:50:37)\n    at ParamValidator.validateUri (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:166:14)\n    at ParamValidator.validateString (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:159:12)\n    at ParamValidator.validateScalar (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:131:21)\n    at ParamValidator.validateMember (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:95:21)\n    at ParamValidator.validateStructure (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:76:14)\n    at ParamValidator.validateMember (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:89:21)\n    at ParamValidator.validate (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:34:10)\n    at Request.VALIDATE_PARAMETERS (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\event_listeners.js:132:42)\n    at Request.callListeners (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\sequential_executor.js:106:20)","time":"2022-05-31T21:05:05.083Z"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"code":"UriParameterError","level":"error","message":"Expected uri parameter to have length >= 1, but found \"\" for params.Bucket Expected uri parameter to have length >= 1, but found \"\" for params.Bucket","stack":"UriParameterError: Expected uri parameter to have length >= 1, but found \"\" for params.Bucket\n    at ParamValidator.fail (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:50:37)\n    at ParamValidator.validateUri (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:166:14)\n    at ParamValidator.validateString (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:159:12)\n    at ParamValidator.validateScalar (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:131:21)\n    at ParamValidator.validateMember (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:95:21)\n    at ParamValidator.validateStructure (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:76:14)\n    at ParamValidator.validateMember (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:89:21)\n    at ParamValidator.validate (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\param_validator.js:34:10)\n    at Request.VALIDATE_PARAMETERS (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\event_listeners.js:132:42)\n    at Request.callListeners (C:\\Projects\\Personal\\Social\\socialie-back\\node_modules\\aws-sdk\\lib\\sequential_executor.js:106:20)","time":"2022-05-31T21:06:44.558Z"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"error","message":"user.postCount.push is not a function user.postCount.push is not a function","stack":"TypeError: user.postCount.push is not a function\n    at C:\\Projects\\Personal\\Social\\socialie-back\\routes\\posts.js:55:18\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}
+{"level":"info","message":"Listening on port 3000"}
+{"level":"info","message":"Connected to mongodb://localhost/socialie_db..."}

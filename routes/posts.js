@@ -29,7 +29,7 @@ router.post("/single", upload.single("image"), async (req, res) => {
 //test get
 router.get("/images/:key", (req, res) => {
   const key = req.params.key;
-  console.log(req.params.key);
+  // console.log(req.params.key);
   const readStream = getFileStream(key);
   readStream.pipe(res); // this line will make image readable
 });
@@ -49,7 +49,8 @@ router.post("/", auth, async (req, res) => {
     replyCount: 0,
   });
 
-  user.postCount++;
+  user.postCount.count++;
+  user.postCount.post.push(post._id);
 
   await post.save();
   res.send(post);
