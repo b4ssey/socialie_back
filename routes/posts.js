@@ -57,7 +57,12 @@ router.post("/", auth, async (req, res) => {
     (await session).withTransaction(async () => {
       user.postCount.count += 1;
       user.postCount.post.push(`${post._id}`);
-      (await session).commitTransaction();
+      user.timeline.push({
+        postId: post._id,
+        date: post.date,
+        caption: post.caption,
+      }),
+        (await session).commitTransaction();
     });
   } catch (error) {
     (await session).abortTransaction();
@@ -66,6 +71,10 @@ router.post("/", auth, async (req, res) => {
   user.save();
 
   res.send(post);
+});
+
+router.get("/timeline/:id", (req, res) => {
+  const id = req.params.id;
 });
 
 module.exports = router;

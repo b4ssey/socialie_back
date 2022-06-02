@@ -17,11 +17,11 @@ const Following = mongoose.model(
 
 function validateFollowing(fllwd, fllwrd) {
   const schema = Joi.object({
-    followeeId: fllwd,
-    followerId: fllwrd,
+    followeeId: Joi.objectId().required(),
+    followerId: Joi.objectId().required(),
   });
   return schema.validate({
-    followeeId: wnrd,
+    followeeId: fllwd,
     followerId: fllwrd,
   });
 }

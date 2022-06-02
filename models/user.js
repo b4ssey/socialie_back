@@ -4,6 +4,12 @@ const mongoose = require("mongoose");
 const Joi = require("joi");
 const passwordComplexity = require("joi-password-complexity");
 
+const postSchema = new mongoose.Schema({
+  postId: { type: String, required: true },
+  date: { type: Date, required: true },
+  caption: { type: String },
+});
+
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -29,14 +35,21 @@ const userSchema = new mongoose.Schema({
     default: "Pending",
   },
   postCount: { post: [String], count: { type: Number, default: 0 } },
-  followerCount: { follower: [Number], count: { type: Number, min: 0 } },
-  followingCount: { following: [Number], count: { type: Number, min: 0 } },
+  followerCount: {
+    follower: [String],
+    count: { type: Number, min: 0, default: 0 },
+  },
+  followingCount: {
+    following: [String],
+    count: { type: Number, min: 0, default: 0 },
+  },
   confirmationCode: {
     type: String,
     unique: true,
   },
   bio: { type: String, minlength: 5, maxlength: 1024 },
   site: { type: String, minlength: 5, maxlength: 64 },
+  timeline: [postSchema],
   isAdmin: Boolean,
 });
 
