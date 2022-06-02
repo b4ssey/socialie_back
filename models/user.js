@@ -28,9 +28,9 @@ const userSchema = new mongoose.Schema({
     enum: ["Pending", "Active"],
     default: "Pending",
   },
-  postCount: { post: [], count: { type: Number, min: 0 } },
-  followerCount: { follower: { type: Array }, count: { type: Number, min: 0 } },
-  followingCount: { following: [], count: { type: Number, min: 0 } },
+  postCount: { post: [String], count: { type: Number, default: 0 } },
+  followerCount: { follower: [Number], count: { type: Number, min: 0 } },
+  followingCount: { following: [Number], count: { type: Number, min: 0 } },
   confirmationCode: {
     type: String,
     unique: true,

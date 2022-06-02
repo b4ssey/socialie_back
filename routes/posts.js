@@ -47,12 +47,24 @@ router.post("/", auth, async (req, res) => {
     imageId,
     ownerId,
     replyCount: 0,
+    likeCount: 0,
   });
 
-  user.postCount.count++;
-  user.postCount.post.push(post._id);
+  const session = User.startSession();
 
-  await post.save();
+  try {
+    await post.save();
+    (await session).withTransaction(async () => {
+      user.postCount.count += 1;
+      user.postCount.post.push(`${post._id}`);
+      (await session).commitTransaction();
+    });
+  } catch (error) {
+    (await session).abortTransaction();
+  }
+
+  user.save();
+
   res.send(post);
 });
 
