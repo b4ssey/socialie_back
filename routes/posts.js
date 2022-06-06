@@ -6,6 +6,7 @@ const fs = require("fs");
 const util = require("util");
 const auth = require("../middleware/auth");
 const { validate, Post } = require("../models/post");
+const ObjectId = require("mongodb").ObjectId;
 const { User } = require("../models/user");
 
 const unlinkFile = util.promisify(fs.unlink);
@@ -57,6 +58,22 @@ router.post("/", auth, async (req, res) => {
     (await session).withTransaction(async () => {
       user.postCount.count += 1;
       user.postCount.post.push(`${post._id}`);
+      console.log("follower", user.followerCount.follower);
+      user.followerCount.follower.forEach(
+        async (x) =>
+          await User.updateOne(
+            { _id: x },
+            {
+              $push: {
+                timeline: {
+                  postId: post._id,
+                  date: post.date,
+                  caption: post.caption,
+                },
+              },
+            }
+          )
+      );
       user.timeline.push({
         postId: post._id,
         date: post.date,
