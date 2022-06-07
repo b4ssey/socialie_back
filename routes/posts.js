@@ -58,7 +58,6 @@ router.post("/", auth, async (req, res) => {
     (await session).withTransaction(async () => {
       user.postCount.count += 1;
       user.postCount.post.push(`${post._id}`);
-      console.log("follower", user.followerCount.follower);
       user.followerCount.follower.forEach(
         async (x) =>
           await User.updateOne(

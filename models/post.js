@@ -1,6 +1,17 @@
 const mongoose = require("mongoose");
 const Joi = require("joi");
 
+const likeSchema = new mongoose.Schema({
+  userId: { type: String, required: true },
+  date: { type: Date, required: true },
+});
+
+const commentSchema = new mongoose.Schema({
+  userId: { type: String, required: true },
+  date: { type: Date, required: true },
+  caption: { type: String, required: true },
+});
+
 const Post = mongoose.model(
   "Post",
   new mongoose.Schema({
@@ -23,14 +34,8 @@ const Post = mongoose.model(
       required: true,
       default: Date.now,
     },
-    replyCount: {
-      type: Number,
-      min: 0,
-    },
-    likeCount: {
-      type: Number,
-      min: 0,
-    },
+    reply: [commentSchema],
+    like: [likeSchema],
   })
 );
 

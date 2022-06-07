@@ -14,7 +14,7 @@ router.get("/me", auth, async (req, res) => {
   res.send(user);
 });
 
-router.get("/timeline/:id", async (req, res) => {
+router.get("/timeline/:id", auth, async (req, res) => {
   const id = req.params.id;
   const { error } = validateId(id);
   if (error) return res.status(400).send(error.details[0].message);
