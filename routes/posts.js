@@ -5,7 +5,7 @@ const { uploadFile, getFileStream } = require("../startup/s3");
 const fs = require("fs");
 const util = require("util");
 const auth = require("../middleware/auth");
-const { validate, Post } = require("../models/post");
+const { validate, Post, validateUser } = require("../models/post");
 const ObjectId = require("mongodb").ObjectId;
 const { User } = require("../models/user");
 
@@ -88,10 +88,6 @@ router.post("/", auth, async (req, res) => {
   user.save();
 
   res.send(post);
-});
-
-router.get("/timeline/:id", (req, res) => {
-  const id = req.params.id;
 });
 
 module.exports = router;

@@ -4,13 +4,25 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 const _ = require("lodash");
 const nodemailer = require("../startup/nodemailer");
-const { User, validate } = require("../models/user");
+const { User, validate, validateId } = require("../models/user");
 const express = require("express");
+const { validateUser } = require("../models/post");
 const router = express.Router();
 
 router.get("/me", auth, async (req, res) => {
   const user = await User.findById(req.user._id).select("-password");
   res.send(user);
+});
+
+router.get("/timeline/:id", async (req, res) => {
+  const id = req.params.id;
+  const { error } = validateId(id);
+  if (error) return res.status(400).send(error.details[0].message);
+
+  const user = await User.findOne({ _id: id });
+  if (!user) return res.status(400).send("Invalid User.");
+
+  res.send(user.timeline);
 });
 
 router.post("/", async (req, res) => {

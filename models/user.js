@@ -84,5 +84,13 @@ function validateUser(nm, ml, psswrd) {
   });
 }
 
+function validateId(id) {
+  const schema = Joi.object({
+    id: Joi.objectId().required(),
+  });
+  return schema.validate({ id });
+}
+
 exports.User = User;
 exports.validate = validateUser;
+exports.validateId = validateId;
