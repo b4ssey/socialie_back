@@ -35,6 +35,11 @@ router.get("/images/:key", (req, res) => {
   readStream.pipe(res); // this line will make image readable
 });
 
+router.get("/", async (req, res) => {
+  const posts = await Post.find().sort("caption");
+  res.send(posts);
+});
+
 router.post("/", auth, async (req, res) => {
   let { caption, imageId, ownerId } = req.body;
   const { error } = validate(caption, imageId, ownerId);

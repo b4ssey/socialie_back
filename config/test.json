@@ -1,0 +1,14 @@
+{
+  "jwtPrivateKey": "1234",
+  "db": "mongodb://localhost/socialie_tests",
+  "pass": "",
+  "user": "socialieapphandler@gmail.com",
+  "clientId": "",
+  "clientSecret": "",
+  "refreshToken": "",
+  "arn": "",
+  "bucket_name": "",
+  "bucket_region": "",
+  "access_key": "",
+  "secret_key": ""
+}
