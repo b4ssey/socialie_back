@@ -5,8 +5,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: Run unit tests & initialize MongoDB
-    env:
-      NODE_ENV: test
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -18,6 +16,8 @@ jobs:
           mongodb-version: 4.2
       - run: npm ci
       - run: npm test
+        env:
+          CI: true
   sast-sonarcloud:
     name: SonarCloud
     # needs: build
