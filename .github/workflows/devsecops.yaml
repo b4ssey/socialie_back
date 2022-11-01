@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 16
           cache: "npm"
-      - uses: supercharge/mongodb-github-action@1.2.0
+      - uses: supercharge/mongodb-github-action@1.8.0
         with:
           mongodb-version: 4.2
       - run: npm ci
