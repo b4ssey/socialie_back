@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --verbose --detectOpenHandles --coverage --maxWorkers=50%"
+    "test": "jest  --maxWorkers=50%"
   },
   "author": {
     "name": "ekemini",
