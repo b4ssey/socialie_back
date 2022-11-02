@@ -1,5 +1,6 @@
 const request = require("supertest");
 const { Post } = require("../../models/post");
+const logger = require("../../middleware/logger");
 const mongoose = require("mongoose");
 
 let server;
@@ -10,8 +11,10 @@ describe("/api/posts", () => {
   });
   afterEach(async () => {
     server.close();
-    mongoose.disconnect();
     await Post.remove({});
+    mongoose
+      .disconnect()
+      .then(() => logger.info(`Disconnected from Post.test DB`));
   });
 
   describe("GET /", () => {
