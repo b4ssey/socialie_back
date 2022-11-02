@@ -6,10 +6,11 @@ const mongoose = require("mongoose");
 let server;
 
 describe("/api/posts", () => {
-  beforeEach(() => {
+  beforeAll(() => {
     server = require("../../index");
   });
-  afterEach(async () => {
+
+  afterAll(async () => {
     server.close();
     await Post.remove({});
     mongoose
