@@ -1,4 +1,6 @@
 const express = require("express");
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("../routes/swagger.json");
 const home = require("../routes/home");
 const comments = require("../routes/comments");
 const followings = require("../routes/followings");
@@ -12,6 +14,7 @@ const auth = require("../routes/auth");
 module.exports = function (app) {
   app.use(express.json());
   app.use("/", home);
+  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
   app.use("/api/comments", comments);
   app.use("/api/followings", followings);
   app.use("/api/posts", posts);
